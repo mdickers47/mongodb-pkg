@@ -40,7 +40,7 @@ scons_options="--use-system-pcre --use-system-boost --use-system-snappy --use-sy
 
 prepare() {
   cd "${srcdir}/mongodb-master"
-  #python2 src/third_party/scons-2.5.0/scons.py ${scons_options} core
+  python2 src/third_party/scons-2.5.0/scons.py ${scons_options} core
   strip "$srcdir/mongodb-master/mongo"
   strip "$srcdir/mongodb-master/mongod"
   strip "$srcdir/mongodb-master/mongos"
