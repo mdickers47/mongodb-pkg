@@ -13,12 +13,12 @@ url="https://www.mongodb.com/"
 license=("AGPL")
 provides=("mongodb=$pkgver")
 conflicts=("mongodb" "mongodb-bin")
-makedepends=("pcre"
-	     "boost"
-             "snappy"
-             "zlib"
-             "valgrind"
-             "libstemmer"
+depends=("boost-libs"
+         "snappy"
+         "zlib"
+         "libstemmer"
+         "pcre")
+makedepends=("boost"
              "python2")
 source=(
     "https://github.com/mdickers47/mongodb/archive/master.tar.gz"
