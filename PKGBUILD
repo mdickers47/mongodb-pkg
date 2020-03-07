@@ -6,7 +6,7 @@
 
 pkgname="mongodb-bin-3.2"
 pkgver="3.2.22"
-pkgrel="1"
+pkgrel="2"
 pkgdesc="An open source, schema-free document-oriented database"
 arch=("armv7h")
 url="https://www.mongodb.com/"
