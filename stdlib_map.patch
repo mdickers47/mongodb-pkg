@@ -1,0 +1,33 @@
+diff -ru --text mongodb-master.orig/src/mongo/db/concurrency/lock_manager.h mongodb-master/src/mongo/db/concurrency/lock_manager.h
+--- mongodb-master.orig/src/mongo/db/concurrency/lock_manager.h	2021-02-28 02:24:43.074113987 +0000
++++ mongodb-master/src/mongo/db/concurrency/lock_manager.h	2021-02-28 02:26:58.771170434 +0000
+@@ -30,6 +30,7 @@
+ 
+ #include <cstdint>
+ #include <deque>
++#include <map>
+ 
+ #include "mongo/config.h"
+ #include "mongo/db/concurrency/lock_manager_defs.h"
+diff -ru --text mongodb-master.orig/src/mongo/db/service_context_d.h mongodb-master/src/mongo/db/service_context_d.h
+--- mongodb-master.orig/src/mongo/db/service_context_d.h	2021-02-28 02:24:45.594059383 +0000
++++ mongodb-master/src/mongo/db/service_context_d.h	2021-02-28 04:23:21.376256279 +0000
+@@ -29,6 +29,7 @@
+ #pragma once
+ 
+ #include <vector>
++#include <map>
+ 
+ #include "mongo/db/service_context.h"
+ #include "mongo/platform/unordered_set.h"
+diff -ru --text mongodb-master.orig/src/mongo/s/chunk_diff.h mongodb-master/src/mongo/s/chunk_diff.h
+--- mongodb-master.orig/src/mongo/s/chunk_diff.h	2021-02-28 02:24:49.263979856 +0000
++++ mongodb-master/src/mongo/s/chunk_diff.h	2021-02-28 05:35:42.455171322 +0000
+@@ -29,6 +29,7 @@
+ #pragma once
+ 
+ #include <string>
++#include <map>
+ 
+ #include "mongo/bson/bsonmisc.h"
+ #include "mongo/bson/bsonobj.h"
